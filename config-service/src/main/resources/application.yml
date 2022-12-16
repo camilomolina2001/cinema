@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:/Users/US/Documents/2022-2/Profundizacion-en-desarrollo-de-software/configdatacinema
+  security:
+    user:
+      name: ${CONFIG_USER}
+      password: ${CONFIG_PASSWORD}
+server:
+  port: 9000
